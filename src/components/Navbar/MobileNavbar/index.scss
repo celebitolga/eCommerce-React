@@ -1,0 +1,59 @@
+.mobile-navbar {
+  $mobileNavbar: &;
+
+  @apply fixed top-0 right-0 left-0 h-screen transition-all duration-300 invisible opacity-0 z-10;
+  @apply md:hidden;
+
+  &.-active {
+    @apply visible opacity-100;
+
+    #{$mobileNavbar}__wrapper {
+      @apply translate-x-0;
+    }
+
+    #{$mobileNavbar}__overlay {
+      @apply opacity-100 visible;
+    }
+  }
+  
+  &__wrapper {
+    @apply bg-white w-full max-w-[17.5rem] h-full p-4;
+    @apply flex flex-col transform -translate-x-full transition-all duration-300;
+  }
+
+  &__close {
+    @apply absolute top-0 right-0 p-3;
+  }
+
+  &-logo {
+    @apply w-full;
+  }
+
+  &-categories {
+    @apply w-full flex flex-col mt-2;
+
+    li {
+      @apply w-full;
+
+      a {
+        @apply w-full inline-block py-1 text-commerceGray text-xl font-medium;
+      }
+    }
+  }
+
+  &__bottom {
+    @apply mt-auto flex flex-col space-y-2;
+
+    &-link {
+      @apply w-full flex items-center p-2;
+      @apply border border-commerceRed text-xl text-commerceRed;
+    }
+  }
+
+  &__overlay {
+    @apply w-full h-full absolute inset-0 z-[-1] cursor-pointer;
+    @apply opacity-0 invisible transition-all duration-300;
+
+    background-color: rgba($color: #000000, $alpha: 0.5);
+  }
+}

@@ -1,0 +1,62 @@
+.address-form {
+  @apply fixed inset-0 z-[60];
+  @apply p-4 flex items-center justify-center bg-commerceBlack-500;
+
+  &__wrapper {
+    @apply p-4 bg-white w-full max-w-xs shadow-lg;
+  }
+
+  &__header {
+    @apply flex items-center justify-between;
+
+    &-title {
+      @apply text-xl font-medium text-commerceGray;
+    }
+
+    &-close {
+      @apply p-2 -mr-2;
+    }
+  }
+
+  &__body {
+    @apply flex flex-col my-4 max-h-96 overflow-y-auto;
+
+    .input-holder {
+      @apply flex flex-col w-full;
+
+      label {
+        @apply flex flex-col text-xl font-medium mb-2;
+      }
+
+      textarea {
+        @apply resize-y min-h-[5rem] p-2 text-base text-black border border-commerceGray rounded-md;
+
+        &::placeholder {
+          @apply text-commerceGray;
+        }
+      }
+    }
+
+  }
+
+  &__buttons {
+    @apply flex items-center justify-end space-x-2;
+
+    .button {
+      &-order,
+      &-cancel {
+        @apply py-2 px-4 border text-base font-semibold rounded-md transition-colors duration-300;
+      }
+
+      &-order {
+        @apply border-green-600 text-green-600;
+        @apply hover:bg-green-600 hover:text-white;
+      }
+
+      &-cancel {
+        @apply border-commerceRed text-commerceRed;
+        @apply hover:bg-commerceRed hover:text-white;
+      }
+    }
+  }
+}

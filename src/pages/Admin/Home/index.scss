@@ -1,0 +1,15 @@
+.admin-home {
+  @apply w-full;
+
+  &__wrapper {
+    @apply w-full flex flex-col;
+  }
+
+  &-title {
+    @apply text-xl font-bold w-full text-center py-2 px-4 border border-commerceRed mb-4;
+  }
+
+  &__content {
+    @apply p-4 border border-commerceRed;
+  }
+}

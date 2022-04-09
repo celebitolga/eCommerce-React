@@ -1,0 +1,62 @@
+.product-recommendation {
+  @apply w-full py-4 my-4 bg-commercePink relative;
+
+  &::before,
+  &::after {
+    @apply block absolute h-full left-0 top-0 bg-commercePink w-full transform;
+
+    content: "";
+  }
+
+  &::before {
+    @apply -translate-x-full;
+  }
+
+  &::after {
+    @apply translate-x-full;
+  }
+
+  &__wrapper {
+    @apply w-full;
+  }
+
+  &-title {
+    @apply text-xl font-bold text-center text-white uppercase mb-4;
+    @apply md:text-2xl;
+  }
+
+  .slider-product {
+    @apply p-2 bg-white rounded-lg shadow-lg;
+    @apply md:p-4;
+
+    &__img {
+      @apply w-full;
+    }
+
+    &__title {
+      @apply text-base font-normal text-center text-black line-clamp-2 my-1 h-12;
+    }
+
+    &__price {
+      @apply flex items-center;
+
+      .-retail {
+        @apply line-through mr-2;
+      }
+      .-price {
+        @apply font-bold text-xl text-commerceGray;
+      }
+    }
+  }
+
+  .splide__arrow {
+
+    &--prev {
+      @apply md:-left-8;
+    }
+
+    &--next {
+      @apply md:-right-8;
+    }
+  }
+}

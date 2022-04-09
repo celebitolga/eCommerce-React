@@ -1,0 +1,11 @@
+.not-found {
+  @apply w-full bg-red-400 flex flex-col items-center p-4;
+
+  &-title {
+    @apply text-xl font-bold mb-2;
+  }
+
+  &-parag {
+    @apply font-semibold;
+  }
+}

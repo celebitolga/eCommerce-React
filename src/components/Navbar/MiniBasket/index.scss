@@ -1,0 +1,117 @@
+.mini-basket {
+  @apply absolute top-0 right-0 h-screen z-10 opacity-0 invisible transition-all duration-300 transform translate-x-full;
+  @apply w-full max-w-[17.5rem];
+  @apply md:h-96 md:top-[62px] md:w-80;
+
+  &.-active {
+    @apply visible opacity-100 translate-x-0;
+  }
+
+  &__top {
+    @apply flex items-center justify-between border-b border-gray-400 pb-3;
+
+    &-title {
+      @apply text-xl text-commerceGray font-medium whitespace-nowrap mr-3;
+    }
+
+    &-length {
+      @apply w-full;
+    }
+
+    &-close {
+      @apply h-10 w-10;
+    }
+  }
+
+  &__wrapper {
+    @apply p-4 h-full flex flex-col bg-white shadow-lg;
+    @apply md:h-min md:max-h-96;
+  }
+
+  &__items {
+    @apply h-full overflow-y-auto mb-4;
+
+    .-empty {
+      @apply mt-4;
+    }
+
+    ul {
+      @apply flex flex-col;
+
+      li {
+        @apply w-full;
+      }
+    }
+
+    &__item {
+      @apply py-3 w-full flex flex-col border-b border-gray-400;
+
+      &-img {
+        @apply w-full max-w-[5rem];
+      }
+
+      &-att {
+        @apply mx-2 flex-1;
+
+        .-title {
+          @apply line-clamp-2;
+        }
+
+        .-quantity {
+
+        }
+
+        .price {
+          @apply flex flex-col mt-1;
+
+          &-retail {
+            @apply line-through text-xs;
+          }
+
+          &-price {
+            @apply text-base font-medium text-commerceRed;
+          }
+        }
+      }
+
+      &-delete {
+        @apply p-1;
+      }
+
+      &__top {
+        @apply w-full flex items-center justify-between flex-wrap;
+      }
+
+      &__bottom {
+        @apply w-full flex items-center flex-wrap mt-1;
+
+        .-total {
+          @apply text-sm;
+        }
+      }
+    }
+  }
+
+
+  &__bottom {
+    @apply mt-auto;
+
+    &-link {
+      @apply w-full flex items-center justify-center p-2 border border-commerceRed text-xl text-commerceRed font-semibold;
+    }
+
+    &-total {
+      @apply mb-4 text-lg flex items-center justify-between;
+    }
+  }
+
+  &__overlay {
+    @apply w-full h-screen absolute inset-0 z-[1];
+    @apply opacity-0 invisible transition-all duration-300 bg-commerceBlack-500;
+
+    &.-active {
+      @apply opacity-100 visible;
+      @apply md:opacity-0;
+    }
+  }
+}

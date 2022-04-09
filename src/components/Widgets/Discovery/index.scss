@@ -1,0 +1,36 @@
+.discovery {
+  @apply w-full py-4;
+
+  &__wrapper {
+    @apply w-full flex flex-col space-y-4;
+    @apply md:flex-row md:space-y-0 md:space-x-4;
+  }
+
+  &__slider {
+    @apply w-full;
+    @apply md:w-1/2;
+
+    &-item {
+      @apply w-full;
+
+      img {
+        @apply w-full;
+      }
+    }
+  }
+
+  &__photos {
+    @apply flex flex-wrap -mx-2;
+    @apply md:-mt-2 #{!important};
+
+    width: calc(100% + 1rem);
+
+    @media (min-width: 768px) {
+      width: calc(50% + 1rem);
+    }
+
+    img {
+      @apply w-1/2 p-2;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.back-to-top {
+  @apply fixed right-4 bottom-20 w-10 h-10 z-50 opacity-0 transition-all duration-300 rotate-180;
+
+  &.-active {
+    @apply opacity-100 rotate-0;
+  }
+}

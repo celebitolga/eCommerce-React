@@ -1,0 +1,34 @@
+.admin {
+  @apply w-full my-4;
+
+  &__wrapper {
+    @apply w-full flex flex-col space-y-10;
+    @apply md:flex-row md:space-y-0 md:space-x-10;
+  }
+
+  &__menu {
+    ul {
+      @apply flex flex-col space-y-4;
+
+      li {
+        
+        .link {
+          @apply inline-block w-full py-2 px-4 border border-commerceRed transition-colors duration-300;
+          @apply text-lg font-medium text-left;
+
+          &:hover {
+            @apply bg-commerceRed text-white;
+          }
+
+          &.-active {
+            @apply bg-commerceRed text-white;
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    @apply flex-1;
+  }
+}

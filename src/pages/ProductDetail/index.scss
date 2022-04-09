@@ -1,0 +1,50 @@
+.product-detail {
+  @apply w-full my-4;
+  @apply md:my-10;
+
+  &__wrapper {
+    @apply flex flex-col space-y-4;
+    @apply md:flex-row md:space-y-0 md:space-x-4;
+    @apply lg:space-x-10;
+  }
+
+  &__carousel {
+    @apply w-full;
+    @apply md:w-1/2;
+  }
+
+  &__info {
+    @apply w-full flex flex-col;
+    @apply md:w-1/2;
+
+    &-title {
+      @apply text-black text-2xl font-medium mb-4;
+    }
+
+    &-price {
+      @apply mt-4 flex flex-col;
+
+      .-retail {
+        @apply text-lg font-medium text-commerceGray line-through;
+      }
+  
+      .-price {
+        @apply text-4xl font-medium text-commerceRed;
+      }
+    }
+
+    &-description {
+      @apply my-4 text-commerceGray;
+    }
+
+    &-button {
+      @apply w-full p-4 text-center text-xl text-commerceRed font-semibold border-2 border-commerceRed rounded-lg;
+      @apply transition-colors duration-300;
+      @apply md:mt-auto;
+
+      &:hover {
+        @apply bg-commerceRed text-white;
+      }
+    }
+  }
+}

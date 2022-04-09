@@ -1,0 +1,15 @@
+.hero-slider {
+  @apply w-full py-4;
+
+  &__wrapper {
+    @apply w-full;
+  }
+
+  .slide-item {
+    @apply w-full border border-coolGray-500;
+
+    img {
+      @apply w-full;
+    }
+  }
+}

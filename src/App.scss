@@ -1,0 +1,7 @@
+.app {
+  @apply my-20 flex flex-col w-full;
+  
+  &__container {
+    @apply p-4 container mx-auto;
+  }
+}

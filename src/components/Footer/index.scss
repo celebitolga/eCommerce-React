@@ -1,0 +1,37 @@
+.footer {
+  @apply fixed right-0 left-0 bottom-0;
+  @apply w-full p-4 mt-4 bg-slate-100;
+
+  box-shadow: 0px 8px 20px -4px black;
+  
+  &__wrapper {
+    @apply w-full;
+  }
+
+  &__content {
+    @apply flex items-center justify-center;
+
+    a {
+      @apply inline-flex items-center justify-center text-lg font-medium text-commerceGray transition-colors duration-300;
+
+      svg {
+        @apply mr-3;
+
+        path {
+          @apply fill-commerceGray transition-colors duration-300;
+        }
+      }
+
+      &:hover {
+        @apply text-black;
+
+        svg {
+  
+          path {
+            @apply fill-black;
+          }
+        }
+      }
+    }
+  }
+}

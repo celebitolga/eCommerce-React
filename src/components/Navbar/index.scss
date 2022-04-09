@@ -1,0 +1,97 @@
+.navbar {
+  @apply w-full p-3 border-b shadow-lg;
+  @apply fixed top-0 bg-white z-50 h-20;
+  @apply flex items-center;
+
+  &__container {
+    @apply flex items-center justify-between container mx-auto;
+  }
+
+  &__hamburger {
+    @apply flex flex-col space-y-1;
+    @apply md:hidden;
+
+    span {
+      @apply block w-8 h-1 bg-commerceGray;
+    }
+  }
+
+  &__item {
+
+    .-active {
+      .logo {
+        @apply grayscale-0;
+      }
+    }
+
+    .logo {
+      @apply w-full max-w-[7rem];
+      @apply md:w-48 md:max-w-none md:grayscale;
+
+      &:hover {
+        @apply grayscale-0;
+      }
+    }
+
+    &.-left {
+      @apply flex;
+    }
+
+    &.-right {
+      @apply flex;
+
+      .-desktop {
+        @apply hidden;
+        @apply md:flex;
+      }
+
+      .link {
+        @apply w-full flex items-center p-2 h-11 whitespace-nowrap;
+        @apply border border-commerceRed text-xl text-commerceRed transition-colors duration-300;
+
+        &:hover {
+          @apply bg-commerceRed text-white;
+        }
+
+        &.-active {
+          @apply bg-commerceRed text-white;
+        }
+      }
+
+      .link + .link {
+        @apply ml-2;
+      }
+
+      .basket {
+        @apply ml-2;
+        @apply md:relative;
+
+        &-button {
+          @apply w-full flex items-center p-2 h-11;
+          @apply border border-commerceRed text-xl text-commerceRed;
+        }
+      }
+    }
+
+    &-categories {
+      @apply hidden;
+      @apply md:flex md:ml-6;
+
+      li {
+        @apply flex items-center;
+
+        a {
+          @apply py-1 px-3 block text-commerceGray text-xl font-medium transition-colors duration-300;
+  
+          &:hover {
+            @apply text-black;
+          }
+
+          &.-active {
+            @apply text-black;
+          }
+        }
+      }
+    }
+  }
+}

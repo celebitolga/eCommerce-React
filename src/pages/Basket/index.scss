@@ -1,0 +1,82 @@
+.basket {
+
+  &-empty {
+    @apply px-2 py-4 bg-commerceYellow text-center text-xl text-commerceRed font-medium;
+  }
+
+  &-start-shopping {
+    @apply mt-6 w-full flex items-center justify-center;
+
+    a {
+      @apply inline-block py-4 px-6 text-center text-xl text-commerceRed font-medium border border-commerceRed transition-colors duration-300;
+      @apply hover:text-white hover:bg-commerceRed;
+    }
+  }
+
+  &__list {
+    @apply flex flex-wrap;
+    @apply sm:-mx-4;
+
+    &-item {
+      @apply w-full mb-4;
+      @apply sm:w-1/2 sm:px-4;
+      @apply md:w-1/3;
+      @apply lg:w-1/4;
+
+      &-title {
+        @apply text-lg font-medium line-clamp-2 h-14;
+      }
+
+      &__price {
+        @apply mt-2;
+        .-retail {
+          @apply line-through mr-2 text-sm;
+        }
+
+        .-price {
+          @apply text-base font-medium;
+        }
+
+        .-total {
+          @apply w-full block text-xl mt-1;
+        }
+      }
+
+      &__quantity {
+        @apply w-full flex items-center justify-center my-4;
+
+        .-decrease,
+        .-increase {
+          @apply w-10 h-10 flex items-center justify-center text-2xl leading-10 text-commerceGray cursor-pointer;
+          @apply border-2 border-commerceGray rounded-md transition-colors duration-300;
+          @apply hover:border-commerceBlack hover:text-commerceBlack;
+        }
+
+        .-quantity {
+          @apply mx-2 text-xl font-medium text-commerceGray;
+        }
+      }
+
+      &-remove {
+        @apply w-full p-2 flex items-center justify-center border border-commerceRed text-commerceRed transition-colors duration-300;
+        @apply hover:border-commerceBlack hover:text-commerceBlack;
+      }
+    }
+  }
+
+  &__bottom {
+    @apply mt-4;
+    
+    &-total {
+      @apply text-xl flex flex-col;
+    }
+
+    &-order-btn {
+      @apply px-6 py-2 bg-green-600 text-white rounded-md text-xl font-medium mt-4;
+    }
+
+    &-signin-btn {
+      @apply px-6 py-2 bg-green-600 text-white rounded-md text-xl font-medium mt-4;
+    }
+  }
+}
