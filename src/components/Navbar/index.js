@@ -76,8 +76,20 @@ function Navbar() {
   }, [pathname]);
 
   useEffect(() => {
-    window.addEventListener("keydown", keyPressEvent, false);
+    // Mobile viewport bug fix
+    let vh = window.innerHeight * 0.01;
 
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    window.addEventListener('resize', () => {
+      let vh = window.innerHeight * 0.01;
+
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+    // End of mobile viewport bug fix
+    
+    window.addEventListener("keydown", keyPressEvent, false);
+    
     return () => {
       window.removeEventListener("keydown", keyPressEvent, false);
     };

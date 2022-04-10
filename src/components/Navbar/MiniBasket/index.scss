@@ -1,7 +1,11 @@
 .mini-basket {
-  @apply absolute top-0 right-0 h-screen z-10 opacity-0 invisible transition-all duration-300 transform translate-x-full;
+  height: calc(100vh);
+  height: calc((var(--vh, 1vh) * 100));
+
+  @apply absolute top-0 right-0 z-10 opacity-0 invisible transition-all duration-300 transform translate-x-full;
   @apply w-full max-w-[17.5rem];
   @apply md:h-96 md:top-[62px] md:w-80;
+
 
   &.-active {
     @apply visible opacity-100 translate-x-0;
