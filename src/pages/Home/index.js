@@ -46,8 +46,8 @@ const homePageOrders = {
         title: "Dell Notebook2",
         description:
           "Trees live in your fan brush, but you have to scare them out. Just let this happen. We just let this flow right out of our minds. You're meant to have fun in life. Clouds are free. They just float around the sky all day and have fun.\n\nSee there how easy that is. Automatically, all of these beautiful, beautiful things will happen. We tell people sometimes: we're like drug dealers, come into town and get everybody absolutely addicted to painting. It doesn't take much to get you addicted. These trees are so much fun. I get started on them and I have a hard time stopping. Life is too short to be alone, too precious. Share it with a friend.",
-        price: 600,
-        retailPrice: 900,
+        price: 500,
+        retailPrice: 500,
         currency: "₺",
       },
       {
@@ -59,7 +59,7 @@ const homePageOrders = {
         title: "Macbook3",
         description:
           "Trees live in your fan brush, but you have to scare them out. Just let this happen. We just let this flow right out of our minds. You're meant to have fun in life. Clouds are free. They just float around the sky all day and have fun.\n\nSee there how easy that is. Automatically, all of these beautiful, beautiful things will happen. We tell people sometimes: we're like drug dealers, come into town and get everybody absolutely addicted to painting. It doesn't take much to get you addicted. These trees are so much fun. I get started on them and I have a hard time stopping. Life is too short to be alone, too precious. Share it with a friend.",
-        price: 600,
+        price: 800,
         retailPrice: 900,
         currency: "₺",
       },
@@ -72,8 +72,8 @@ const homePageOrders = {
         title: "Acer4",
         description:
           "Trees live in your fan brush, but you have to scare them out. Just let this happen. We just let this flow right out of our minds. You're meant to have fun in life. Clouds are free. They just float around the sky all day and have fun.\n\nSee there how easy that is. Automatically, all of these beautiful, beautiful things will happen. We tell people sometimes: we're like drug dealers, come into town and get everybody absolutely addicted to painting. It doesn't take much to get you addicted. These trees are so much fun. I get started on them and I have a hard time stopping. Life is too short to be alone, too precious. Share it with a friend.",
-        price: 600,
-        retailPrice: 900,
+        price: 400,
+        retailPrice: 400,
         currency: "₺",
       },
     ],
@@ -103,8 +103,8 @@ const homePageOrders = {
         title: "Dell Notebook2",
         description:
           "Trees live in your fan brush, but you have to scare them out. Just let this happen. We just let this flow right out of our minds. You're meant to have fun in life. Clouds are free. They just float around the sky all day and have fun.\n\nSee there how easy that is. Automatically, all of these beautiful, beautiful things will happen. We tell people sometimes: we're like drug dealers, come into town and get everybody absolutely addicted to painting. It doesn't take much to get you addicted. These trees are so much fun. I get started on them and I have a hard time stopping. Life is too short to be alone, too precious. Share it with a friend.",
-        price: 600,
-        retailPrice: 900,
+        price: 500,
+        retailPrice: 500,
         currency: "₺",
       },
       {
@@ -116,7 +116,7 @@ const homePageOrders = {
         title: "Macbook3",
         description:
           "Trees live in your fan brush, but you have to scare them out. Just let this happen. We just let this flow right out of our minds. You're meant to have fun in life. Clouds are free. They just float around the sky all day and have fun.\n\nSee there how easy that is. Automatically, all of these beautiful, beautiful things will happen. We tell people sometimes: we're like drug dealers, come into town and get everybody absolutely addicted to painting. It doesn't take much to get you addicted. These trees are so much fun. I get started on them and I have a hard time stopping. Life is too short to be alone, too precious. Share it with a friend.",
-        price: 600,
+        price: 800,
         retailPrice: 900,
         currency: "₺",
       },
@@ -129,8 +129,8 @@ const homePageOrders = {
         title: "Acer4",
         description:
           "Trees live in your fan brush, but you have to scare them out. Just let this happen. We just let this flow right out of our minds. You're meant to have fun in life. Clouds are free. They just float around the sky all day and have fun.\n\nSee there how easy that is. Automatically, all of these beautiful, beautiful things will happen. We tell people sometimes: we're like drug dealers, come into town and get everybody absolutely addicted to painting. It doesn't take much to get you addicted. These trees are so much fun. I get started on them and I have a hard time stopping. Life is too short to be alone, too precious. Share it with a friend.",
-        price: 600,
-        retailPrice: 900,
+        price: 400,
+        retailPrice: 400,
         currency: "₺",
       },
     ],
